@@ -1,7 +1,7 @@
-# Static Site Documentation
+# Serverless Site Documentation
 
 ### Warning
-If you reading this you must have came from the [first]() repository after building the electonics and cloud infrusture. If you not created the electronic step or cloud infrusture yet, please go back to the [first]() repository and complete the steps leading up to this point. 
+If you reading this you must have came from the [first](https://github.com/KevyVo/wfh-security-system) repository after building the electonics and cloud infrusture. If you not created the electronic step or cloud infrusture yet, please go back to the [first](https://github.com/KevyVo/wfh-security-system) repository and complete the steps leading up to this point. 
 
 ## Summary
 
@@ -36,7 +36,7 @@ We are going to build this portion of the diagram today, please follow the step 
 2.  <details>
      <summary>Click for React Setup Instruction</summary>
 
-     We are going to enter the right aws information for your cloud service that created in the [first]() repo and change some user customication
+     We are going to enter the right aws information for your cloud service that created in the [first](https://github.com/KevyVo/wfh-security-system) repo and change some user customication
      
      ### React Setup
      1. Please open your AWS console and navigate to AWS Iot Core
@@ -84,7 +84,7 @@ We are going to build this portion of the diagram today, please follow the step 
 3.  <details>
      <summary>Click for Amplify Setup Instruction</summary>
 
-     Please refer to this supporting [docmention]() if any errors occurs
+     Please refer to this supporting [documentation](https://docs.amplify.aws/start/q/integration/react) if any errors occurs
 
      ### Amplify Setup
      1. Use the same AWS account we made for database in the [first](https://docs.amplify.aws/start/q/integration/react)
@@ -177,7 +177,7 @@ We are going to build this portion of the diagram today, please follow the step 
         3. Choose a type: Manual deployment
         4. ```amplify publish``` This will push everything up to the cloud and give us public access
             - ![hosting](gif/hosting.gif)
-     3. If you don`t want to host on a custom domain(step 6) please return back to the [first]() repo and move onto step 5(Smart Light).
+     3. If you don`t want to host on a custom domain(step 6) please return back to the [first](https://github.com/KevyVo/wfh-security-system) repo and move onto step 5(Smart Light).
    </details>
 
 6.  <details>
@@ -206,7 +206,7 @@ We are going to build this portion of the diagram today, please follow the step 
          4. select the correct domain
          5. click save
             - ![amplify](gif/amplify.gif)
-      3. Please return back to the [first]() repo and move onto step 5(Smart Light).
+      3. Please return back to the [first](https://github.com/KevyVo/wfh-security-system) repo and move onto step 5(Smart Light).
    </details>
 
 ## Services Used
@@ -222,55 +222,20 @@ We are going to build this portion of the diagram today, please follow the step 
 
 ## Directory Structure
 ```
-Door_staticsite (root)
-├── Cred (Used to store credential/certificate)
-│   ├── Lock_smart
-│   │   ├── AmazonRootCA1.pem
-│   │   ├── e90fd69537-certificate.pem.crt
-│   │   ├── e90fd69537-private.pem.key
-│   │   └── e90fd69537-public.pem.key
-│   └── Override
-│       ├── AmazonRootCA1.pem
-│       ├── e36d0b7c1f-certificate.pem.crt
-│       ├── e36d0b7c1f-private.pem.key
-│       └── e36d0b7c1f-public.pem.key
-├── LICENSE
-├── Pictures
-│   └── double_publish.png
-├── README.md
-└── alarmsite (React Folder)
-    ├── README.md
-    ├── amplify (AWS Amplify)
-    │   ├── #current-cloud-backend
-    │   │   ├── amplify-meta.json
-    │   │   ├── auth
-    │   │   ├── backend-config.json
-    │   │   └── hosting
-    │   ├── backend
-    │   │   ├── amplify-meta.json
-    │   │   ├── auth
-    │   │   ├── awscloudformation
-    │   │   ├── backend-config.json
-    │   │   └── hosting
-    │   └── team-provider-info.json
-    ├── amplify.json
-    ├── package-lock.json
-    ├── package.json
-    ├── src
-    │   ├── App.css
-    │   ├── App.js
-    │   ├── App.test.js
-    │   ├── aws-exports.js
-    │   ├── components
-    │   │   ├── ToggleSwitch.js
-    │   │   ├── ToggleSwitch.scss
-    │   │   └── sensorData.js
-    │   ├── index.css
-    │   ├── index.js
-    │   ├── logo.svg
-    │   ├── reportWebVitals.js
-    │   └── setupTests.js
-    └── yarn.lock
+wfh-serverless-site (root)
+├───alarmsite (React Folder)
+│   ├───amplify
+│   │   ├───.config
+│   │   └───backend
+│   │       ├───auth
+│   │       │   └───alarmsite2beaa5f9
+│   │       └───hosting
+│   │           └───amplifyhosting
+│   ├───public
+│   └───src
+│       └───components
+├───gif
+└───Pictures
 ```
 ## Supporting Documentation
 
